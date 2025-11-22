@@ -7,7 +7,7 @@ body {
  background-color: rgb(239, 235, 244);
 }
 .wrapper {
-  background-color: rgb(162, 134, 185);
+  /* background-color: rgb(162, 134, 185); */
   /* #navbar height=56px */
   /* #footer height=40px */
   min-height: calc(100vh - 56px - 40px);
