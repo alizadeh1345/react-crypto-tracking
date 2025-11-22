@@ -1,22 +1,22 @@
-import React,{useRef} from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { FaCoins } from "react-icons/fa";
-import './Navbar.css'
+import "./Navbar.css";
 
 const NavbarComponent = () => {
+  const btnToggleRef = useRef();
 
-  const btnToggleRef = useRef()
-
-  const toggleMenu=()=>{
-    btnToggleRef.current.click()
-  }
+  const toggleMenu = () => {
+    if (window.innerWidth < 992) {
+      btnToggleRef.current.click();
+    }
+  };
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <div>
-          <FaCoins  className="navbar-logo-icon"/>
+          <FaCoins className="navbar-logo-icon" />
           <span className="navbar-logo-test">Crypto Tracking</span>
-          
         </div>
         <button
           className="navbar-toggler"
