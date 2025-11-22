@@ -12,3 +12,7 @@ body {
   /* #footer height=40px */
   min-height: calc(100vh - 56px - 40px);
 }
+.about-img {
+  width: 400px;
+  height: 400px;
+}
